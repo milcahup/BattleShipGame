@@ -30,3 +30,4 @@ public class Cell {
                 && targetPosition.x < position.x + width && targetPosition.y < position.y + height;
     }
 }
+
