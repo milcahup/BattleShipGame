@@ -1,3 +1,10 @@
+/**
+ * Battleship
+ * Author: Peter Mitchell (2021)
+ *
+ * Position class:
+ * Used to represent a single position x,y.
+ */
 public class Position {
     /**
      * Down moving unit vector.
