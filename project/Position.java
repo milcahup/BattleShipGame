@@ -31,9 +31,6 @@ public class Position {
 
     /**
      * Sets the value of Position.
-     *
-     * @param x X coordinate.
-     * @param y Y coordinate.
      */
     public Position(int x, int y) {
         this.x = x;
@@ -42,8 +39,6 @@ public class Position {
 
     /**
      * Copy constructor to create a new Position using the values in another.
-     *
-     * @param positionToCopy Position to copy values from.
      */
     public Position(Position positionToCopy) {
         this.x = positionToCopy.x;
@@ -52,9 +47,6 @@ public class Position {
 
     /**
      * Sets the Position to the specified x and y coordinate.
-     *
-     * @param x X coordinate.
-     * @param y Y coordinate.
      */
     public void setPosition(int x, int y) {
         this.x = x;
@@ -63,8 +55,6 @@ public class Position {
 
     /**
      * Updates this position by adding the values from the otherPosition.
-     *
-     * @param otherPosition Other Position to add to this one.
      */
     public void add(Position otherPosition) {
         this.x += otherPosition.x;
@@ -73,9 +63,6 @@ public class Position {
 
     /**
      * Calculate the distance from this position to the other position.
-     *
-     * @param otherPosition Position to check distance to.
-     * @return Distance between this position and the other position.
      */
     public double distanceTo(Position otherPosition) {
         return Math.sqrt(Math.pow(x-otherPosition.x,2)+Math.pow(y-otherPosition.y,2));
@@ -83,8 +70,6 @@ public class Position {
 
     /**
      * Multiplies both components of the position by an amount.
-     *
-     * @param amount Amount to multiply vector by.
      */
     public void multiply(int amount) {
         x *= amount;
@@ -93,21 +78,13 @@ public class Position {
 
     /**
      * Updates this position by subtracting the values from the otherPosition.
-     *
-     * @param otherPosition Other Position to add to this one.
      */
     public void subtract(Position otherPosition) {
         this.x -= otherPosition.x;
         this.y -= otherPosition.y;
     }
 
-    /**
-     * Compares the Position object against another object.
-     * Any non-Position object will return false. Otherwise compares x and y for equality.
-     *
-     * @param o Object to compare this Position against.
-     * @return True if the object o is equal to this position for both x and y.
-     */
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -115,12 +92,6 @@ public class Position {
         Position position = (Position) o;
         return x == position.x && y == position.y;
     }
-
-    /**
-     * Gets a string version of the Position.
-     *
-     * @return A string in the form (x, y)
-     */
     @Override
     public String toString() {
         return "(" + x + ", " + y + ")";
