@@ -1,9 +1,6 @@
 import java.awt.*;
 
 /**
- * Battleship
- * Author: Peter Mitchell (2021)
- *
  * Marker class:
  * Represents a simple coloured rectangle that can be either
  * shown or hidden, and will change colour based on whether
