@@ -4,9 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Battleship
- * Author: Peter Mitchell (2021)
- *
  * SelectionGrid class:
  * Defines the grid for storing Ships with a grid of markers to
  * indicate hit/miss detection.
