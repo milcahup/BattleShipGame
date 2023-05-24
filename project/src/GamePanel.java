@@ -169,7 +169,7 @@ public class GamePanel extends JPanel implements MouseListener, MouseMotionListe
         }
     }
 
-e void tryMovePlacingShip(Position mousePosition) {
+    private void tryMovePlacingShip(Position mousePosition) {
         if(player.isPositionInside(mousePosition)) {
             Position targetPos = player.getPositionInGrid(mousePosition.x, mousePosition.y);
             updateShipPlacement(targetPos);
