@@ -9,13 +9,13 @@ public class Rectangle {
     protected Position position;
     protected int width;
     protected int height;
-
+/* The first constructor of the Rectangle */
     public Rectangle(Position position, int width, int height) {
         this.position = position;
         this.width = width;
         this.height = height;
     }
-
+/* The second constructor of the Rectangle */
     public Rectangle(int x, int y, int width, int height) {
         this(new Position(x,y), width, height);
     }
