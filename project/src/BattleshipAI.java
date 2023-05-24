@@ -3,6 +3,7 @@ import java.util.List;
 
 public class BattleshipAI {
     protected List<Position> validMoves;
+    protected SelectionGrid playerGrid;
     
     public BattleshipAI(SelectionGrid playerGrid) {
         this.playerGrid = playerGrid;
