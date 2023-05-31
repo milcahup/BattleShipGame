@@ -39,7 +39,8 @@ public class GamePanel extends JPanel implements MouseListener, MouseMotionListe
     public GamePanel(int aiChoice) {
         computer = new SelectionGrid(0,0);
         player = new SelectionGrid(0,computer.getHeight()+50);
-        setBackground(new Color(42, 136, 163));
+        // setBackground(new Color(42, 136, 163));
+        setBackground(new Color(194,194,194));
         setPreferredSize(new Dimension(computer.getWidth(), player.getPosition().y + player.getHeight()));
         addMouseListener(this);
         addMouseMotionListener(this);

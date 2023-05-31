@@ -16,11 +16,11 @@ public class SelectionGrid extends Rectangle {
     /**
      * Number of grid cells on the Horizontal axis.
      */
-    public static final int GRID_WIDTH = 10;
+    public static final int GRID_WIDTH = 20;
     /**
      * Number of grid cells on the Vertical axis.
      */
-    public static final int GRID_HEIGHT = 10;
+    public static final int GRID_HEIGHT = 8;
     /**
      * Definitions of the number of Ships, and the number of segments that make up each of those ships.
      */
